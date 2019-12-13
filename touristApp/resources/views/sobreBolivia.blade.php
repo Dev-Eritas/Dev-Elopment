@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" rel="stylesheet">
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-    
+
   </head>
   <body>
   <!--NABVAR HEADER-->
@@ -37,41 +37,41 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    
+
     <header class="site-navbar py-1" role="banner">
 
         <div class="container">
           <div class="row align-items-center">
-            
-            
+
+
             <div class="col-10 col-md-8 d-none d-xl-block">
               <nav class="nabvar navbar-expand-lg  bg-light site-navigation text-right text-lg-center fixed-top" >
-                
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="col-6 col-xl-2 fi">
                         <h1 class="mb-0">
-                          <a href="login.html">
+                          <a href="/login">
                            <img src="images/Logo.jpg" alt="Image" class="img-fluid" width="100" height="140" controls>
                           </a>
                         </h1>
-                    </div> 
+                    </div>
                 <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                   <li>
-                    <a href="index.html">HOME</a>
+                    <a href="/welcome">HOME</a>
                   </li>
-                  
+
                   <li class="active"><a href="sobreBolivia.blade.php">SOBRE BOLIVIA</a></li>
                   <li class="has-children">
                     <a href="#">EXPERIENCIAS</a>
                    <ul class="dropdown">
-                      <li><a href="blog.html">Ecoturismo</a></li>
-                      <li><a href="experiencias.html">Turismo de Aventura</a></li>
-                      <li><a href="eventosCulturales.html">Eventos culturales</a></li>
-                      <li><a href="patrimonio.html">Patrimonio de la humanidad</a></li>
+                      <li><a href="/blog">Ecoturismo</a></li>
+                      <li><a href="/experiencias">Turismo de Aventura</a></li>
+                      <li><a href="/eventosCulturales">Eventos culturales</a></li>
+                      <li><a href="/patrimonio">Patrimonio de la humanidad</a></li>
                     </ul>
                   </li>
-                  
-                  <li><a href="contacto.html">CONTACTO</a></li>
+
+                  <li><a href="/contactos">CONTACTO</a></li>
                   <!-- <li><a href="booking.html">Book Online</a></li> -->
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -81,21 +81,21 @@
               </div>
               </nav>
             </div>
-  
-            
-  
+
+
+
               <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-  
+
             </div>
-  
+
           </div>
         </div>
-        
+
       </header>
 
-  
 
-   
+
+
 
     <div class="site-blocks-cover inner-page-cover" style="background-image: url(images/fauna.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -104,19 +104,19 @@
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h1 class="text-white font-weight-light">Bolivia... País fuera de este mundo</h1>
               <div><a href="index.html">HOME</a> <span class="mx-2 text-white">&bullet;</span> <span class="text-white">SOBRE BOLIVIA</span></div>
-              
+
             </div>
           </div>
         </div>
-      </div>  
+      </div>
 
 
-    
+
 
     <div class="site-section">
-      
+
       <div class="container">
-        
+
         <div class="row">
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
             <a href="#" class="unit-1 text-center">
@@ -138,18 +138,18 @@
           </div>
 
           <div class="row align-items-center justify-content-center text-center">
-              
+
               <p class="mb-5">Bolivia es Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.</p>
 
             </div>
-    
+
     </div>
 
     <div class="site-section block-13 bg-light">
-  
+
 
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -206,9 +206,9 @@
       </div>
     </div>
   </div>
-  
-  
-  
+
+
+
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -218,8 +218,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
           </div>
 
-          
-          
+
+
         </div>
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="row mb-5">
@@ -243,12 +243,12 @@
             </div>
           </div>
 
-          
+
 
         </div>
 
         <div class="col-lg-4 mb-5 mb-lg-0">
-         
+
 
           <div class="mb-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
@@ -265,7 +265,7 @@
           </div>
 
         </div>
-        
+
       </div>
       <div class="row pt-5 mt-5 text-center">
         <div class="col-md-12">
@@ -295,7 +295,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
 
-<script src="js/completo.js"></script>
-    
+<script rel="stylesheet" href="{{ asset('/js/app.js') }}"></script>
+
   </body>
 </html>
