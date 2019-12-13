@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/sobreBolivia', function () {
     return view('sobreBolivia');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
