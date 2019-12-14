@@ -79,10 +79,15 @@
               </div>
 
             </div>
-          </div>
-
         </header>
 
+  @guest
+          <div class="container-fluid mt-5">
+              <p class="display-1">No tiene acceso a esta pagina</p>
+              <a class="display-2" href="/welcome">Devuelta</a>
+          </div>
+
+  @else
   <!--dashboard-->
   <div class="site-section">
 
@@ -144,11 +149,9 @@
         <p>Comunicación con los desarrolladores de la página de lugares turísticos</p>
       </div>
    </div>
-
-
-
    </div>
    </div>
+  @endguest
 
   </div>
 
