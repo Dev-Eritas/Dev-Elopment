@@ -22,6 +22,132 @@
                         "description": "Ha ocurrido un error."
                     }
                 }
+            },
+            "put": {
+                "summary": "Actualizar un usuario",
+                "description": "",
+                "operationId": "App\\Http\\Controllers\\Api\\UserController::updateUser",
+                "requestBody": {
+                    "description": "Actualizar un usuario",
+                    "required": true,
+                    "content": {
+                        "application/xml": {}
+                    }
+                },
+                "responses": {
+                    "400": {
+                        "description": "ID Inválido"
+                    },
+                    "404": {
+                        "description": "Usuario no encontrado"
+                    },
+                    "405": {
+                        "description": "Validation exception"
+                    }
+                },
+                "security": [
+                    {
+                        "user_auth": [
+                            "write:user",
+                            "read:user"
+                        ]
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Añadir un nuevo usuario",
+                "operationId": "App\\Http\\Controllers\\Api\\UserController::addUser",
+                "requestBody": {
+                    "description": "A new editor",
+                    "required": true,
+                    "content": {
+                        "application/xml": {}
+                    }
+                },
+                "responses": {
+                    "405": {
+                        "description": "Input inválido"
+                    }
+                },
+                "security": [
+                    {
+                        "user_auth": [
+                            "write:user",
+                            "read:user"
+                        ]
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Borrar usuario",
+                "operationId": "App\\Http\\Controllers\\Api\\UserController::deleteUser",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "ID de usuario a borrar",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "ID Inválido"
+                    },
+                    "404": {
+                        "description": "Usuario no encontrado"
+                    }
+                },
+                "security": [
+                    {
+                        "user_auth": [
+                            "write:user",
+                            "read:user"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/blogs": {
+            "get": {
+                "summary": "Mostrar blogs",
+                "operationId": "App\\Http\\Controllers\\Api\\UserController::blog",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los blogs."
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/blog": {
+            "post": {
+                "summary": "Añadir un nuevo blog",
+                "operationId": "App\\Http\\Controllers\\Api\\UserController::addBlog",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/xml": {}
+                    }
+                },
+                "responses": {
+                    "405": {
+                        "description": "Input inválido"
+                    }
+                },
+                "security": [
+                    {
+                        "blog_auth": [
+                            "write:blog",
+                            "read:blog"
+                        ]
+                    }
+                ]
             }
         }
     }
