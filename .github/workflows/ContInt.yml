@@ -13,11 +13,14 @@ jobs:
       working-directory: ./touristApp/
       run: composer install
     - name: Generar llaves
+      working-directory: ./touristApp/
       run: php artisan key:generate
     - name: Crear una base de datos y esquemas
+      working-directory: ./touristApp/
       run: |
         mkdir -p database
         touch database/laravel.sql
         php artisan migrate
     - name: Ejecutar test con PHPUnit
+      working-directory: ./touristApp/
       run: vendor/bin/phpunit
