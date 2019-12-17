@@ -9,9 +9,8 @@ jobs:
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Ver si composer esta instalado
       run: which composer
-    - name: Entrar en la carpeta correcta
-      run: cd ./touristApp/
     - name: Instalar dependencias (PHP Vendor)
+      working-directory: ./touristApp/
       run: composer install
     - name: Generar llaves
       run: php artisan key:generate
