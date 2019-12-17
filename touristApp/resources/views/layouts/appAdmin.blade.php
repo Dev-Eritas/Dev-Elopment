@@ -84,17 +84,12 @@
                                     </div>
 
                                     <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                                        <li><a href="/welcome">HOME</a></li>
-                                        <li><a href="/sobreBolivia">SOBRE BOLIVIA</a></li>
-                                        <li class="has-children"><a href="#">EXPERIENCIAS</a>
-                                            <ul class="dropdown">
-                                                <li><a href="/blog">Ecoturismo</a></li>
-                                                <li><a href="/experiencias">Turismo de Aventura</a></li>
-                                                <li><a href="/eventosCulturales">Eventos culturales</a></li>
-                                                <li><a href="/patrimonio">Patrimonio de la humanidad</a></li>
-                                            </ul>
+                                        <li class="active">
+                                        <a href="/adminHome">DASHBOARD</a>
                                         </li>
-                                        <li><a href="/contactos">CONTACTO</a></li>
+
+                                        <li><a href="/contactosDevs">CONTACTOS</a></li>
+                                        <!-- <li><a href="booking.html">Book Online</a></li> -->
                                     </ul>
                                     <!--aqui es register y login-->
                                     <!-- Right Side Of Navbar -->
