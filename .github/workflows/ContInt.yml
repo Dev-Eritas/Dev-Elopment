@@ -1,18 +1,20 @@
-name: Continuous Integration Laravel 6
+name: Continuous Integration
 on: [push]
 jobs:
   laravel-tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Copy ENV Laravel Configuration for CI
+    - name: Copiar ENV o revisar si existe
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
-    - name: Generate key
+    - name: Instalar dependencias (PHP Vendor)
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+    - name: Generar llaves
       run: php artisan key:generate
-    - name: Create DB and schemas
+    - name: Crear una base de datos y esquemas
       run: |
         mkdir -p database
         touch database/laravel.sql
         php artisan migrate
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
+    - name: Ejecutar test con PHPUnit
       run: vendor/bin/phpunit
