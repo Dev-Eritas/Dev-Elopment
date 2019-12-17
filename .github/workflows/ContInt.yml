@@ -7,14 +7,14 @@ jobs:
     - uses: actions/checkout@v1
     - name: Copiar ENV o revisar si existe
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - name: Ver si composer esta instalado
+      run: which composer
     - name: Instalar dependencias (PHP Vendor)
-      run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      working-directory: ./touristApp/
+      run: composer install
     - name: Generar llaves
+      working-directory: ./touristApp/
       run: php artisan key:generate
-    - name: Crear una base de datos y esquemas
-      run: |
-        mkdir -p database
-        touch database/laravel.sql
-        php artisan migrate
     - name: Ejecutar test con PHPUnit
+      working-directory: ./touristApp/
       run: vendor/bin/phpunit
