@@ -1,0 +1,11 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  laravel-ContTest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Copiar ENV o revisar si existe
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - name: Ver si composer esta instalado
+      run: which npm
