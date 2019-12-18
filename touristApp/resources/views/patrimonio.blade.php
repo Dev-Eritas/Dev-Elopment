@@ -28,12 +28,30 @@
                 </div>
 
               </a>
+              @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
+
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+            @else
               <p>El Centro Espiritual y Político de la Cultura Tiwanaku es Patrimonio
                   Mundial desde el año 2000, debido a su Valor Universal Excepcional
                   expresado en la concepción y maestría constructiva de los templos y
                   de la estatuaria monumental. Su unidad reside también en los
                   conocimientos de una sociedad multiétnica, dirigida por líderes
                   políticos y espirituales durante más de 1000 años.</p>
+            @endif
             </div>
             <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
               <a href="#" class="unit-1 text-center">

@@ -19,19 +19,40 @@
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
             <img src="images/hotel1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Hotel 1: Hotel de Sal Cristal Samaña</h2>
+
             <p class="mb-4">Este hotel tranquilo con vista al salar de Uyuni se
                 ubica en un edificio pintoresco hecho de bloques de sal.
                 Está a 9 km de la emblemática plaza de las Banderas y a
                 4 km de la estación de trenes Colchani.</p>
             <p>
 
+
               <a href="/hotelSalar1" class="btn btn-primary py-3 px-5 text-white text-center">Ver mas ></a>
 
             </p>
+
           </div>
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
             <img src="images/hotel2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Hotel 2: Hotel De Sal Luna Salada</h2>
+
+            @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
+
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+            @else
             <p class="mb-4">Bienvenido al Hotel Luna Salada & Spa, un hotel
               completamente hecho de sal en Bolivia que ofrece a sus huéspedes
               la esencia de los Andes, en el borde de los salares más grandes
@@ -39,10 +60,12 @@
             <p>
               <a href="/hotelSalar2" class="btn btn-primary py-3 px-5 text-white text-center">Ver mas ></a>
               </p>
+              @endif
           </div>
           <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
             <img src="images/hotel3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Hotel 3: Tambo Coquesa Lodge</h2>
+
             <p class="mb-4">Estamos comprometidos con el desarrollo de las
               regiones impulsamos diferentes actividades turísticas, servimos
               a nuestros visitantes brindándoles atención y servicio personalizado</p>

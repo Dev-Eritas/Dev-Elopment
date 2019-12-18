@@ -27,8 +27,25 @@
           </div>
           <div class="col-md-6 pl-md-5">
             <h2 class="font-weight-light text-black mb-4">Turismo de Aventura!!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque eius modi expedita accusamus alias error totam ab magnam a mollitia magni, distinctio temporibus optio illo sapiente, odio unde natus.</p>
+            @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
 
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+            @else
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque eius modi expedita accusamus alias error totam ab magnam a mollitia magni, distinctio temporibus optio illo sapiente, odio unde natus.</p>
+            @endif
             <ul class="list-unstyled">
               <li class="d-flex align-items-center"><span class="icon-check2 text-primary h3 mr-2"></span><span>Vitae cumque eius modi expedita</span></li>
               <li class="d-flex align-items-center"><span class="icon-check2 text-primary h3 mr-2"></span><span>Totam at maxime Accusantium</span></li>

@@ -63,12 +63,15 @@ h2.demo-text{font-family: 'Roboto', sans-serif!important; font-size:45px; font-w
 .footer{border-top:1px solid #DDD; margin:20px 0 10px 0; padding-top:10px; font-size:12px;}
 
 /* Editor Styles */
-
+/* ESTE ES IMPORTANTE*/
 .Editor-container{
   margin-top:20px;
   margin-left: 50px;
-  margin-right: 100px;
+  margin-right: 50px;
   font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  margin-bottom: -100px;
   }
 
 .line-control-menu-bar{
@@ -144,6 +147,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   border:1px solid #EEE;
   border-radius:0;
     word-wrap: break-word;
+    margin-bottom: -150px;
+
   }
 #paletteCntr ul
 {

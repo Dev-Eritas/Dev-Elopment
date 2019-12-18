@@ -16,6 +16,23 @@
 
 
               <h1 class=" font-weight-light" style="color: white;"> BIENVENIDO A LA PAZ</h1>
+              @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
+
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+            @else
               <p class="mb-5">
                   La Paz está ubicado al oeste del país.
                   La economía del Departamento de La Paz es la segunda economía
@@ -26,7 +43,7 @@
                   ángulos, ella le ofrece. La Paz de noche es un espectáculo
                   maravilloso, pues asemeja al cielo lleno de estrellas.
                 </p>
-
+            @endif
 
             </div>
           </div>

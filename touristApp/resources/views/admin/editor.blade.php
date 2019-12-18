@@ -1,11 +1,10 @@
 @extends('layouts.editorAdmin')
 
-@section('title', 'Admin - dashboard')
+@section('title', 'Admin - editor')
 
 @section('content')
 		<div class="container-fluid">
 			<div class="row justify-content-center mb-5">
-				<h2 class="demo-text">EDITOR DE TEXTO</h2>
 				<div class="container">
 					<div class="row justify-content-center mb-5">
 						<div class="col-lg-12 nopadding">

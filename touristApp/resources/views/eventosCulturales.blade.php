@@ -28,11 +28,30 @@
                 </div>
 
               </a>
+              @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
+
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+            @else
               <p>En diferentes ciudades y pueblos las fiestas de carnaval se
                   llevan a cabo con mucho entusiasmo. El carnaval en Bolivia es
                   tiempo de corsos y comparsas, de challa, de caporales y morenada,
                   de cerveza y chicha, de bailes y alegría. Fechas: 2, 3, 4 y 5 de
-                  marzo.</p>
+                  marzo.
+              </p>
+            @endif
             </div>
             <div class="col-md-6 col-lg-6 mb-6 mb-lg-0">
               <a href="#" class="unit-1 text-center">

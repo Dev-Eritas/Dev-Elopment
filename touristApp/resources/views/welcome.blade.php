@@ -15,8 +15,27 @@
 
 
               <h1 class="text-white font-weight-light">LA PAZ</h1>
-              <p class="mb-5">La Paz está ubicado al oeste del país. La economía del Departamento de La Paz es la segunda economía más grande del país.​</p>
-              <p><a href="/ciudad" class="btn btn-primary py-3 px-5 text-white">Conoce!</a></p>
+                @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
+
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+                @else
+                <p class="mb-5">La Paz está ubicado al oeste del país. La economía del Departamento de La Paz es la segunda economía más grande del país.​</p>
+                <p><a href="/ciudad" class="btn btn-primary py-3 px-5 text-white">Conoce!</a></p>
+
+                @endif
 
             </div>
           </div>
