@@ -1,0 +1,18 @@
+name: Continuous Integration Front-End 
+on: [push]
+jobs:
+  laravel-ContTest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Copiar ENV o revisar si existe
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - name: Intalar npm
+      working-directory: ./touristApp/
+      run: npm install
+    - name: Compilar con npm
+      working-directory: ./touristApp/
+      run: sudo npm install -g node-sass
+    - name: Empaquetar back-end y front-end
+      run: node-sass ./resources/sass/ -o ./resources/css
+      
