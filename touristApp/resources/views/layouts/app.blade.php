@@ -25,6 +25,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -45,6 +47,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+
 </head>
 <body>
     <div class="site-wrap" id="app">

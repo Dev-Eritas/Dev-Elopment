@@ -30,12 +30,28 @@
           </div>
 
           <div class="row align-items-center justify-content-center text-center">
+          @if(Route::has('login'))
+                    @extends('layouts.editorAdmin')
+                    @section('content')
+                            <div class="container-fluid">
+                                <div class="row justify-content-center mb-5">
 
+                                    <div class="container">
+                                        <div class="row justify-content-center mb-5">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
+                            </div>
+            @else
               <p class="mb-5">Bolivia es Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est inventore ducimus repudiandae.</p>
-
+            @endif
             </div>
 
     </div>
@@ -59,26 +75,10 @@
                   <img src="images/img_4.jpg" alt="Image" class="img-md-fluid">
                 </div>
                 <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
-                @if(Route::has('login'))
-                    @extends('layouts.editorAdmin')
-                    @section('content')
-                            <div class="container-fluid">
-                                <div class="row justify-content-center mb-5">
 
-                                    <div class="container">
-                                        <div class="row justify-content-center mb-5">
-                                            <div class="col-lg-12 nopadding">
-                                                <textarea id="txtEditor"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
-                            </div>
-                @else
                   <p class="text-black lead">&ldquo;Bolivia se encuentra en el corazón de sudamérica. Limita al noreste con el Brasil, al sudeste con el Paraguay, al sur con la Argentina, al sudoeste con Chile y al oeste con el Peru.&rdquo;</p>
                   <p class="">&mdash; <em>Ubicación</em></p>
-                @endif
+
                 </div>
               </div>
             </div>

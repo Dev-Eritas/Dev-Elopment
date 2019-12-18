@@ -28,10 +28,10 @@
 
     <script src="{{ asset('js/editor.js') }}" defer></script>
     <script>
-			$(document).ready(function() {
-				$("#txtEditor").Editor();
-			});
-		</script>
+        $(document).ready(function() {
+            $("#txtEditor").Editor();
+        });
+	</script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700">
