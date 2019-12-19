@@ -18,25 +18,24 @@
                     <img src="images/hotel1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
                     <h2 class="text-black font-weight-light mb-4">Hotel 1: Hotel de Sal Cristal Samaña</h2>
                     @if(Auth::check())
-                        <div class="container-fluid">
+                        <form action="/hoteles" method="post" class="container-fluid">
+                            @csrf
                             <div class="row justify-content-center mb-5">
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea class="col-12 p-1 border-dark">Aqui va el texto de la BD</textarea>
+                                            <textarea required name="content1" class="col-12 p-1 border-dark">{{ $txt[0]->contenido }}</textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <li class="row justify-content-center mb-5">
-                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                                <button class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</button>
                             </li>
-                        </div>
+                        </form>
+                        @error('content1') {{ $mensaje }} @enderror
                     @else
-                        <p class="mb-4">Este hotel tranquilo con vista al salar de Uyuni se
-                            ubica en un edificio pintoresco hecho de bloques de sal.
-                            Está a 9 km de la emblemática plaza de las Banderas y a
-                            4 km de la estación de trenes Colchani.</p>
+                        <p class="mb-4">{{ $txt[0]->contenido }}</p>
                         <p><a href="/hotelSalar1" class="btn btn-primary py-3 px-5 text-white text-center">Ver mas ></a></p>
                     @endif
                 </div>
@@ -45,26 +44,25 @@
                     <img src="images/hotel2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
                     <h2 class="text-black font-weight-light mb-4">Hotel 2: Hotel De Sal Luna Salada</h2>
                     @if(Auth::check())
-                        <div class="container-fluid">
+                        <form action="/hoteles" method="post" class="container-fluid">
+                            @csrf
                             <div class="row justify-content-center mb-5">
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea class=""></textarea>
+                                            <textarea required name="content2" class="col-12 p-1 border-dark">{{ $txt[1]->contenido }}</textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <li class="row justify-content-center mb-5">
-                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                                <button class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</button>
                             </li>
-                        </div>
+                        </form>
+                        @error('content2') {{ $mensaje }} @enderror
                     @else
-                        <p class="mb-4">Bienvenido al Hotel Luna Salada & Spa, un hotel
-                            completamente hecho de sal en Bolivia que ofrece a sus huéspedes
-                            la esencia de los Andes, en el borde de los salares más grandes
-                            del mundo.</p>
-                        <p><a href="/hotelSalar2" class="btn btn-primary py-3 px-5 text-white text-center">Ver mas ></a></p>
+                        <p class="mb-4">{{ $txt[1]->contenido }}</p>
+                        <p><a href="/hotelSalar1" class="btn btn-primary py-3 px-5 text-white text-center">Ver mas ></a></p>
                     @endif
                 </div>
 

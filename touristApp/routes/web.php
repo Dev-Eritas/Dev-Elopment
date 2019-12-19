@@ -33,6 +33,7 @@ Route::get('/ciudad', function (){
 });
 
 Route::get('/hoteles', 'AdminController@hoteles');
+Route::post('/hoteles', 'AdminController@storeData');
 
 Route::get('/hotelSalar1', function (){
     return view('hotelSalar1');
