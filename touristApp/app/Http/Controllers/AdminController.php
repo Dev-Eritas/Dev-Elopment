@@ -10,4 +10,8 @@ class AdminController extends Controller
     public function index(){
         return view('admin.adminHome');
     }
+
+    public function hoteles(){
+        return view('hoteles');
+    }
 }

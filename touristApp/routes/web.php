@@ -32,9 +32,7 @@ Route::get('/ciudad', function (){
     return view('ciudad');
 });
 
-Route::get('/hoteles', function (){
-    return view('hoteles');
-});
+Route::get('/hoteles', 'AdminController@hoteles');
 
 Route::get('/hotelSalar1', function (){
     return view('hotelSalar1');

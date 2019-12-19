@@ -7,35 +7,29 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
-
     <!-- Scripts -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/editor.js') }}" defer></script>
     <script>
-			$(document).ready(function() {
-				$("#txtEditor").Editor();
-			});
-		</script>
-
-
+        $(document).ready(function () {
+            $("#txtEditor").Editor();
+        });
+    </script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="{{ asset('/css/editor.css') }}">
 
+    <title>@yield('title')</title>
 
 </head>
 <body>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+<main class="py-4">
+    @yield('content')
+</main>
 
-    </div>
 </body>
 </html>
