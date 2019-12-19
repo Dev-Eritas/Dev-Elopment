@@ -12,7 +12,7 @@ jobs:
       run: npm install
     - name: Compilar con npm
       working-directory: ./touristApp/
-      run: sudo npm install -g node-sass
+      run: sudo npm install -g --unsafe-perm node-sass
     - name: Empaquetar back-end y front-end
       run: node-sass ./resources/sass/ -o ./resources/css
       
