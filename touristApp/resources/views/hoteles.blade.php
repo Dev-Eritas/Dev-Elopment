@@ -24,7 +24,8 @@
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea required name="content1" class="col-12 p-1 border-dark">{{ $txt[0]->contenido }}</textarea>
+                                            <textarea class="form-control border-info form-rounded" id="text" maxlength="200" placeholder="Type in your message" rows="5" cols="30" required name="content1">{{ $txt[0]->contenido }}</textarea>
+                                            <span class="pull-right label label-default" id="count_message"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +51,8 @@
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea required name="content2" class="col-12 p-1 border-dark">{{ $txt[1]->contenido }}</textarea>
+                                            <textarea class="form-control border-info form-rounded" id="text" maxlength="200" placeholder="Type in your message" rows="5" cols="30" required name="content2">{{ $txt[1]->contenido }}</textarea>
+                                            <span class="pull-right label label-default" id="count_message"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +77,8 @@
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea id="txtEditor3"></textarea>
+                                            <textarea class="form-control border-info form-rounded" id="text" maxlength="200" placeholder="Type in your message" rows="5" cols="30" required name="content3">{{ $txt[2]->contenido }}</textarea>
+                                            <span class="pull-right label label-default" id="count_message"></span>
                                         </div>
                                     </div>
                                 </div>
