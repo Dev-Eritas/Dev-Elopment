@@ -1,4 +1,4 @@
-name: Continuous Integration Compilation
+name: Continuous Integration Back-end
 on: [push]
 jobs:
   laravel-ContTest:
@@ -13,7 +13,7 @@ jobs:
     - name: Compilar con npm
       working-directory: ./touristApp/
       run: npm run dev
-    - name: Empaquetar back-end y front-end
+    - name: Empaquetar back-end
       run: zip -r dev_eritas.zip ./touristApp/resources/views/
     - name: Comprobar que el zip esta generado
       run: unzip -l dev_eritas.zip | less
