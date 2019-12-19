@@ -1,3 +1,5 @@
+
+/*------------------------------------------------*/
 AOS.init({
     duration: 800,
     easing: 'slide',
@@ -237,3 +239,5 @@ jQuery(document).ready(function($) {
    siteDatePicker();
 
 });
+
+

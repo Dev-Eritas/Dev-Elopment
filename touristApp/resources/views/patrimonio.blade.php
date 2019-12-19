@@ -28,23 +28,27 @@
                 </div>
 
               </a>
-              @if(Route::has('login'))
-                    @extends('layouts.editorAdmin')
-                    @section('content')
-                            <div class="container-fluid">
-                                <div class="row justify-content-center mb-5">
-
-                                    <div class="container">
-                                        <div class="row justify-content-center mb-5">
-                                            <div class="col-lg-12 nopadding">
-                                                <textarea id="txtEditor"></textarea>
-                                            </div>
+              @if(Auth::check())
+                    </br>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
                             </div>
-            @else
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>El Centro Espiritual y Político de la Cultura Tiwanaku es Patrimonio
                   Mundial desde el año 2000, debido a su Valor Universal Excepcional
                   expresado en la concepción y maestría constructiva de los templos y
@@ -61,6 +65,27 @@
                   <h3 class="unit-1-heading">Explora el fuerte de Samaipata</h3>
                 </div>
               </a>
+              @if(Auth::check())
+                    </br>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text2" name="text2"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message2"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>Es un sitio arqueológico precolombino de Bolivia, ubicado a pocos kilómetros
                   del pueblo de Samaipata en la provincia Florida, departamento de Santa Cruz,
                   a una altura de 1950 msnm. Está situado en las estribaciones orientales de
@@ -68,6 +93,7 @@
                   extranjeros por igual.
                   Fue declarado Patrimonio Cultural de la Humanidad por la Unesco el año 1998 y
                   es considerada la piedra tallada más grande del mundo.​</p>
+                  @endif
             </div>
 
           </div>

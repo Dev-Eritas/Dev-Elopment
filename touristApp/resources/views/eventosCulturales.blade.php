@@ -28,23 +28,27 @@
                 </div>
 
               </a>
-              @if(Route::has('login'))
-                    @extends('layouts.editorAdmin')
-                    @section('content')
-                            <div class="container-fluid">
-                                <div class="row justify-content-center mb-5">
-
-                                    <div class="container">
-                                        <div class="row justify-content-center mb-5">
-                                            <div class="col-lg-12 nopadding">
-                                                <textarea id="txtEditor"></textarea>
-                                            </div>
+              @if(Auth::check())
+            </br>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
                             </div>
-            @else
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>En diferentes ciudades y pueblos las fiestas de carnaval se
                   llevan a cabo con mucho entusiasmo. El carnaval en Bolivia es
                   tiempo de corsos y comparsas, de challa, de caporales y morenada,
@@ -60,11 +64,33 @@
                   <h3 class="unit-1-heading">Explora el famoso Salar de Uyuni</h3>
                 </div>
               </a>
+              @if(Auth::check())
+            </br>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text2" name="text2"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message2"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>El salar de Uyuni es el mayor desierto de sal continuo del mundo,
                   con una superficie de 12 000 km². Está situado a unos 3650 msnm en
                   el suroeste de Bolivia, en la provincia de Daniel Campos en el
                   departamento de Potosí dentro de la región altiplánica de la
                   Cordillera de los Andes.</p>
+                  @endif
             </div>
 
           </div>

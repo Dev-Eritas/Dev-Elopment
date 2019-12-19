@@ -28,23 +28,26 @@
               <img src="images/LaPaz.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="/ciudad">La Paz</a></h2>
               <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              @if(Route::has('login'))
-                    @extends('layouts.editorAdmin')
-                    @section('content')
-                            <div class="container-fluid">
-                                <div class="row justify-content-center mb-5">
-
-                                    <div class="container">
-                                        <div class="row justify-content-center mb-5">
-                                            <div class="col-lg-12 nopadding">
-                                                <textarea id="txtEditor"></textarea>
-                                            </div>
+              @if(Auth::check())
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <li class="row justify-content-center mb-5"><a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a></li>
                             </div>
-            @else
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
             @endif
             </div>
@@ -54,7 +57,35 @@
               <img src="images/Cochabamba.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="/ciudad">Cochabamba</a></h2>
               <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              @if(Auth::check())
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text2" name="text2"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message2"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
+
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            @endif
             </div>
           </div>
 
@@ -63,7 +94,34 @@
               <img src="images/Pando.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="/ciudad">Pando</a></h2>
               <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              @if(Auth::check())
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text3" name="text3"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message3"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            @endif
             </div>
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
@@ -71,7 +129,34 @@
               <img src="images/Oruro.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="/ciudad">Oruro</a></h2>
               <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              @if(Auth::check())
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            @endif
             </div>
           </div>
 
@@ -80,7 +165,28 @@
               <img src="images/Potosi.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="/ciudad">Potosí</a></h2>
               <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              @if(Auth::check())
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            @endif
             </div>
           </div>
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
@@ -88,7 +194,34 @@
               <img src="images/SantaCruz.jpg" alt="Image" class="img-fluid">
               <h2 class="font-size-regular"><a href="/ciudad">SantaCruz</a></h2>
               <div class="meta mb-4">by Theresa Winston <span class="mx-2">&bullet;</span> Jan 18, 2019 at 2:00 pm <span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+              @if(Auth::check())
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mb-5">
+                                <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
+                                    <div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="row justify-content-center mb-5">
+                                <a href="" class="btn btn-primary py-2 px-2 text-white">ACEPTAR CAMBIOS</a>
+                            </li>
+                        </div>
+                    @else
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+            @endif
             </div>
           </div>
 

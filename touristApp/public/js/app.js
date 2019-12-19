@@ -1,3 +1,27 @@
+/* -------------VALIDACION DE CARACTERES--------------------------- */
+var text_max = 200;
+$('#count_message').html('0 / ' + text_max );
+$('#count_message2').html('0 / ' + text_max );
+$('#count_message3').html('0 / ' + text_max );
+/*-------------------------------------------------*/
+$('#text').keyup(function() {
+  var text_length = $('#text').val().length;
+  var text_remaining = text_max - text_length;
+
+  $('#count_message').html(text_length + ' / ' + text_max);
+});
+$('#text2').keyup(function() {
+    var text_length = $('#text2').val().length;
+    var text_remaining = text_max - text_length;
+
+    $('#count_message2').html(text_length + ' / ' + text_max);
+});
+$('#text3').keyup(function() {
+    var text_length = $('#text3').val().length;
+    var text_remaining = text_max - text_length;
+
+    $('#count_message3').html(text_length + ' / ' + text_max);
+});
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

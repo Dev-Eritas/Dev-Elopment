@@ -1,6 +1,42 @@
 @charset "UTF-8";
 
 /* Base */
+textarea {
+    resize: none;
+}
+
+#count_message {
+  background-color: smoke;
+  margin-top: -20px;
+  margin-right: 5px;
+}
+#count_message2 {
+    background-color: smoke;
+    margin-top: -20px;
+    margin-right: 5px;
+}
+#count_message3 {
+    background-color: smoke;
+    margin-top: -20px;
+    margin-right: 5px;
+}
+
+.purple-border textarea {
+    border: 1px solid #ba68c8;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+
+.green-border-focus .form-control:focus {
+    border: 3px solid #4ec8cc;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}
+.form-rounded {
+    border-radius: 10rem;
+}
 
 body {
   line-height: 1.7;

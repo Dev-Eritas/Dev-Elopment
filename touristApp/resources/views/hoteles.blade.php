@@ -21,9 +21,19 @@
                         <div class="container-fluid">
                             <div class="row justify-content-center mb-5">
                                 <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
                                     <div class="row justify-content-center mb-5">
-                                        <div class="col-lg-12 nopadding">
-                                            <textarea class="col-12 p-1 border-dark">Aqui va el texto de la BD</textarea>
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text" name="text"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message"></span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -47,10 +57,22 @@
                     @if(Auth::check())
                         <div class="container-fluid">
                             <div class="row justify-content-center mb-5">
-                                <div class="container">
+                            <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
                                     <div class="row justify-content-center mb-5">
-                                        <div class="col-lg-12 nopadding">
-                                            <textarea class=""></textarea>
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text2" name="text2"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30">
+                                                    hola
+                                               </textarea>
+                                                <span class="pull-right label label-default" id="count_message2"></span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -74,10 +96,20 @@
                     @if(Auth::check())
                         <div class="container-fluid">
                             <div class="row justify-content-center mb-5">
-                                <div class="container">
+                            <div class="container">
+                                    <!--<div class="row justify-content-center mb-5">
+                                        <div class="form-group green-border-focus">
+                                            <textarea class="form-control border-info form-rounded" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+                                        </div>
+
+                                    </div>!-->
                                     <div class="row justify-content-center mb-5">
-                                        <div class="col-lg-12 nopadding">
-                                            <textarea id="txtEditor3"></textarea>
+                                        <div class="form-group green-border-focus">
+                                            <form accept-charset="UTF-8" action="" method="POST">
+                                                <textarea class="form-control border-info form-rounded" id="text3" name="text3"
+                                                maxlength="200" placeholder="Type in your message" rows="5" cols="30"></textarea>
+                                                <span class="pull-right label label-default" id="count_message3"></span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
