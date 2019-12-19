@@ -23,7 +23,7 @@
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea id="txtEditor"></textarea>
+                                            <textarea class="col-12 p-1 border-dark">Aqui va el texto de la BD</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea id="txtEditor"></textarea>
+                                            <textarea class=""></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@
                                 <div class="container">
                                     <div class="row justify-content-center mb-5">
                                         <div class="col-lg-12 nopadding">
-                                            <textarea id="txtEditor"></textarea>
+                                            <textarea id="txtEditor3"></textarea>
                                         </div>
                                     </div>
                                 </div>
