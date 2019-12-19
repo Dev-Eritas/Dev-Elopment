@@ -14,5 +14,6 @@ jobs:
       working-directory: ./touristApp/
       run: sudo npm install -g --unsafe-perm node-sass
     - name: Empaquetar back-end y front-end
+      working-directory: ./touristApp/
       run: node-sass ./resources/sass/ -o ./resources/css
       
