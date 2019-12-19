@@ -10,10 +10,10 @@ jobs:
     - name: Intalar npm
       working-directory: ./touristApp/
       run: npm install
-    - name: Compilar con npm
+    - name: Instalar node-sass
       working-directory: ./touristApp/
       run: sudo npm install -g --unsafe-perm node-sass
-    - name: Empaquetar back-end y front-end
+    - name: Compilar SCSS a CSS
       working-directory: ./touristApp/
       run: node-sass ./resources/sass/ -o ./resources/css
       
