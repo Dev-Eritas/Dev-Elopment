@@ -1,4 +1,4 @@
-name: Continuous Integration Back-end
+name: Continuous Integration Testing
 on: [push]
 jobs:
   laravel-tests:
